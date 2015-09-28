@@ -56,5 +56,27 @@ git merge dev
 //禁用Fast forward合并，可以在log --graph图上显示出分支合并纪录
 git merge --no-ff -m "merge with no--ff" dev
 
-//删除分支
+//删除分支,删除没有合并的分支-D
 git branch -d dev
+
+//暂存当前工作区
+git stash
+
+//恢复工作区
+git stash pop
+
+
+//更新，抓去
+git pull
+
+//clone下来mater分支，可以用其他分支ID获取到
+//其他分支代码，但自己还是在master分支..
+
+//推送
+git push origin branchName
+
+//如果git pull提示“no tracking information”，
+//则说明本地分支和远程分支的链接关系没有创建，
+//用命令git branch --set-upstream branch-name origin/branch-name
+
+//查看远程库信息，使用git remote -v；
