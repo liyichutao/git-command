@@ -80,3 +80,34 @@ git push origin branchName
 //用命令git branch --set-upstream branch-name origin/branch-name
 
 //查看远程库信息，使用git remote -v；
+
+
+Quick setup — if you’ve done this kind of thing before
+ SSH
+git@github.com:liyichutao/js-note.git
+We recommend every repository include a README, LICENSE, and .gitignore.
+
+
+
+or create a new repository on the command line
+
+echo "# js-note" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:liyichutao/js-note.git
+git push -u origin master
+
+
+
+or push an existing repository from the command line
+
+git remote add origin git@github.com:liyichutao/js-note.git
+git push -u origin master
+
+
+
+or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
